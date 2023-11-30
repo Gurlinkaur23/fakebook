@@ -77,6 +77,7 @@ function createPost(text, image) {
 
     // Clear the input fields
     fileInputName.innerText = '';
+    fileInputName.dataset.url = '';
     inputText.value = '';
   } else {
     inputText.value = 'Add text or image or both to create a new post :)';
