@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Fakebook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style/index.css" media="all" />
+    <script src="./assets/script/app.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container flexbox">
+        <div class="logo heading">
+          <h1>Fakebook</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Friends</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Groups</a></li>
+            <li><a href="#">My ads</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+        <figure class="logo profile">
+          <img src="./assets/img/profile-img.webp" class="profile-img" />
+        </figure>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="main-content">
+          <form>
+            <textarea
+              type="text"
+              placeholder="What's new..."
+              class="input-text"
+            ></textarea>
+            <label for="file-input" class="file-input-label"
+              ><i class="fa-solid fa-image"></i
+            ></label>
+            <input type="file" id="file-input" name="fileInput" />
+            <span class="file-input-name"></span>
+            <button class="btn-post">Post</button>
+          </form>
+          <section class="posts"></section>
+        </div>
+      </div>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h2>User Information</h2>
+        <p class="user-info"></p>
+      </div>
+      <div class="overlay hidden"></div>
+    </main>
+  </body>
+</html>
